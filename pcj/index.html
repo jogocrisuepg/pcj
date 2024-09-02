@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <title>Patrimônio Cultural - Jaguariaíva - PR</title>
+    
+    <style>
+        div[style*="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"] {
+            display: none !important;
+        }
+        
+        img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+            display: none !important;
+        }
+        
+        a[href*="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"] {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-grid">
+            <div class="bloco-a">
+                <table id="tabuleiro" class="tabuleiro">
+                    <tbody>
+                        <tr>
+                            <td class="casas cor-5">
+                                <i id="player-1" class="fa-solid fa-chess-pawn fa-2xl fa-bounce player-1"></i>
+                                <i id="player-2" class="fa-solid fa-chess-pawn fa-2xl fa-bounce player-2"></i>
+                            </td>
+                            <td class="casas cor-1">
+    
+                            </td>
+                            <td class="casas cor-1">
+    
+                            </td>
+                            <td class="casas cor-1">
+    
+                            </td>
+                            <td class="casas cor-1">
+    
+                            </td>
+                            <td class="casas cor-5">
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="casas cor-4">
+    
+                            </td>
+                            <td class="bg-casa-1">
+    
+                            </td>
+                            <td class="bg-casa-2">
+    
+                            </td>
+                            <td class="bg-casa-3">
+    
+                            </td>
+                            <td class="bg-casa-4">
+                                
+                            </td>
+                            <td class="casas cor-2">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="casas cor-4">
+    
+                            </td>
+                            <td class="bg-casa-5">
+    
+                            </td>
+                            <td class="bg-casa-6">
+    
+                            </td>
+                            <td class="bg-casa-7">
+    
+                            </td>
+                            <td class="bg-casa-8">
+    
+                            </td>
+                            <td class="casas cor-2">
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="casas cor-4">
+    
+                            </td>
+                            <td class="bg-casa-9">
+    
+                            </td>
+                            <td class="bg-casa-10">
+    
+                            </td>
+                            <td class="bg-casa-11">
+    
+                            </td>
+                            <td class="bg-casa-12">
+    
+                            </td>
+                            <td class="casas cor-2">
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="casas cor-4">
+    
+                            </td>
+                            <td class="bg-casa-13">
+    
+                            </td>
+                            <td class="bg-casa-14">
+    
+                            </td>
+                            <td class="bg-casa-15">
+    
+                            </td>
+                            <td class="bg-casa-16">
+    
+                            </td>
+                            <td class="casas cor-2">
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="casas cor-5">
+    
+                            </td>
+                            <td class="casas cor-3">
+    
+                            </td>
+                            <td class="casas cor-3">
+    
+                            </td>
+                            <td class="casas cor-3">
+    
+                            </td>
+                            <td class="casas cor-3">
+    
+                            </td>
+                            <td class="casas cor-5">
+    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="bloco-b">
+                <div class="jogador-1">
+                    <div class="avatar-1">
+                        <i class="fa-solid fa-gamepad fa-xl"></i>
+                    </div>
+                    <div class="controle-1">
+                        <button id="botao-esquerda-1" class="botao-esquerda-1"><i class="fa-regular fa-circle-left fa-xl"></i></button>
+                        <button id="botao-direita-1" class="botao-direita-1"><i class="fa-regular fa-circle-right fa-xl"></i></button>
+                        <button id="botao-baixo-1" class="botao-baixo-1"><i class="fa-regular fa-circle-down fa-xl"></i></button>
+                        <button id="botao-cima-1" class="botao-cima-1"><i class="fa-regular fa-circle-up fa-xl"></i></button>
+                    </div>
+                </div>
+                <div class="jogador-2">
+                    <div class="avatar-2">
+                        <i class="fa-solid fa-gamepad fa-xl"></i>
+                    </div>
+                    <div class="controle-2">
+                        <button id="botao-esquerda-2" class="botao-esquerda-2"><i class="fa-regular fa-circle-left fa-xl"></i></button>
+                        <button id="botao-direita-2" class="botao-direita-2"><i class="fa-regular fa-circle-right fa-xl"></i></button>
+                        <button id="botao-baixo-2" class="botao-baixo-2"><i class="fa-regular fa-circle-down fa-xl"></i></button>
+                        <button id="botao-cima-2" class="botao-cima-2"><i class="fa-regular fa-circle-up fa-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="bloco-c">
+                <div class="jogar-dado">
+                    <img id="face" src="./img/dado/face01.png" alt="Dado" class="dado">
+                </div>
+                <div id="cards" class="jogar-cartas">
+                    <div class="cartas">
+                        <img id="draw1" src="./img/cartas/cartas.png" alt="Dado" class="dado">
+                    </div>
+                </div>
+                <div id="sair" class="sair-jogo">
+                    <div class="sair">
+                        <a href="https://patrimonioculturaljaguariaiva.000webhost.com/"><img id="draw1" src="./img/sair/sair.png" alt="Sair" class="sair"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="congrats" id="congrats">
+            <div class="congrats-content">
+                <div class="congrats-imagem">
+                    <img src="./img/bg/trofeu.jpg" class="congrats-img">
+                </div>
+                <div id="restart" class="reiniciar">
+                    <button class="buttons reiniciar-1">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-a" id="modal-a">
+            <div class="conteudo-perguntas">
+                <div class="perguntas-imagem">
+                    <img src="./img/bg/tropeiro.jpg" class="perguntas-img">
+                </div>
+                <div id="pergunta" class="pergunta">
+                    <label id="question"></label>
+                </div>
+                <div id="botoes" class="botoes">
+                    <button class="button verdadeiro" id="true">Verdadeiro</button>
+                    <button class="button falso" id="false">Falso</button>
+                </div>
+                <div id="feedback-pergunta" class="feedback" style="display: none;">
+                    <label id="feedback"></label>
+                </div>
+                <div id="fechar" style="display: none;" class="fechar">
+                    <button id="close" style="display: none;" class="buttons fechar-1">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scritpt.js"></script>
+    <script src="https://kit.fontawesome.com/79cbf05ff5.js" crossorigin="anonymous"></script>
+</body>
+</html>

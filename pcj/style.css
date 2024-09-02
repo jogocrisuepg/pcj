@@ -1,0 +1,773 @@
+/* ---------------- Configurações Gerais ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-color: #dcdde1;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-areas: 
+        'bloco-a' 
+        'bloco-b'
+        'bloco-c'
+    ;
+    gap: 5px;
+
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+/* ------------------------------------------------------ */
+
+/* ----------------------- Bloco A ---------------------- */
+.bloco-a {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    grid-area: bloco-a;
+
+    background-color: #dfe6e9;
+    border-radius: 5px;
+}
+
+.casas {
+    width: 3.5em;
+    height: 3.5em;
+    text-align: center;
+    border: 4px solid #2d3436;
+    border-radius: 5px;
+}
+
+.player-1 {
+    color: #3c40c6;
+}
+
+.player-2 {
+    color: #ff3f34;
+}
+
+.cor-1 {
+    background-color: #55efc4;
+}
+
+.cor-2 {
+    background-color: #ffeaa7;
+}
+
+.cor-3 {
+    background-color: #ff7675;
+}
+
+.cor-4 {
+    background-color: #74b9ff;
+}
+
+.cor-5 {
+    background-color: #fff;
+}
+
+.bg-casa-1 {
+    background-image: url("./img/bg/img01.jpg");
+    border-radius: 5px 0 0 0;
+    background-size:cover;
+}
+
+.bg-casa-2 {
+    background-image: url("./img/bg/img02.jpg");
+    border-radius: 0 5px 0 0;
+    background-size:cover;
+}
+
+.bg-casa-3 {
+    background-image: url("./img/bg/img05.jpg");
+    border-radius: 5px 0 0 0;
+    background-size:cover;
+}
+
+.bg-casa-4 {
+    background-image: url("./img/bg/img06.jpg");
+    border-radius: 0 5px 0 0;
+    background-size:cover;
+}
+
+.bg-casa-5 {
+    background-image: url("./img/bg/img03.jpg");
+    border-radius: 0 0 0 5px;
+    background-size:cover;
+}
+
+.bg-casa-6 {
+    background-image: url("./img/bg/img04.jpg");
+    border-radius: 0 0 5px 0;
+    background-size:cover;
+}
+
+.bg-casa-7 {
+    background-image: url("./img/bg/img07.jpg");
+    border-radius: 0 0 0 5px;
+    background-size:cover;
+}
+
+.bg-casa-8 {
+    background-image: url("./img/bg/img08.jpg");
+    border-radius: 0 0 5px 0;
+    background-size:cover;
+}
+
+.bg-casa-9 {
+    background-image: url("./img/bg/img09.jpg");
+    border-radius: 5px 0 0 0;
+    background-size:cover;
+}
+
+.bg-casa-10 {
+    background-image: url("./img/bg/img10.jpg");
+    border-radius: 0 5px 0 0;
+    background-size:cover;
+}
+
+.bg-casa-11 {
+    background-image: url("./img/bg/img13.jpg");
+    border-radius: 5px 0 0 0;
+    background-size:cover;
+}
+
+.bg-casa-12 {
+    background-image: url("./img/bg/img14.jpg");
+    border-radius: 0 5px 0 0;
+    background-size:cover;
+}
+
+.bg-casa-13 {
+    background-image: url("./img/bg/img11.jpg");
+    border-radius: 0 0 0 5px;
+    background-size:cover;
+}
+
+.bg-casa-14 {
+    background-image: url("./img/bg/img12.jpg");
+    border-radius: 0 0 5px 0;
+    background-size:cover;
+}
+
+.bg-casa-15 {
+    background-image: url("./img/bg/img15.jpg");
+    border-radius: 0 0 0 5px;
+    background-size:cover;
+}
+
+.bg-casa-16 {
+    background-image: url("./img/bg/img16.jpg");
+    border-radius: 0 0 5px 0;
+    background-size:cover;
+}
+/* ------------------------------------------------------ */
+
+/* ----------------------- Bloco B ---------------------- */
+.bloco-b {
+    display: grid;
+    grid-template-areas: 
+        'jogador-1 jogador-2'
+    ;
+    gap: 5px;
+    
+    grid-area: bloco-b;
+
+    background-color: #dfe6e9;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.jogador-1 {
+    display: grid;
+    grid-template-areas: 
+        'avatar-1'
+        'controle-1'
+    ;
+    gap: 5px;
+    
+    grid-area: jogador-1;
+}
+
+.avatar-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: avatar-1;
+
+    height: 30px;
+    color: #fff;
+    background-color: #3c40c6;
+    border: 2px solid #3c40c6;
+    border-radius: 5px;
+}
+
+.controle-1 {
+    display: grid;
+    grid-template-areas: 
+        'botao-direita-1 botao-baixo-1'
+        'botao-cima-1    botao-esquerda-1'
+    ;
+    gap: 1px;
+    
+    grid-area: controle-1;
+}
+
+.botao-esquerda-1 {
+    grid-area: botao-esquerda-1;
+
+    height: 50px;
+    color: #fff;
+    background-color: #1e272e;
+    border: 2px solid #3c40c6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-esquerda-1:hover {
+    background-color: #3c40c6;
+    color: #fff;
+}
+
+.botao-direita-1 {
+    grid-area: botao-direita-1;
+
+    height: 50px;
+    color: #fff;
+    background-color: #1e272e;
+    border: 2px solid #3c40c6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-direita-1:hover {
+    background-color: #3c40c6;
+    color: #fff;
+}
+
+.botao-cima-1 {
+    grid-area: botao-cima-1;
+
+    height: 50px;
+    color: #fff;
+    background-color: #1e272e;
+    border: 2px solid #3c40c6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-cima-1:hover {
+    background-color: #3c40c6;
+    color: #fff;
+}
+
+.botao-baixo-1 {
+    grid-area: botao-baixo-1;
+
+    height: 50px;
+    color: #fff;
+    background-color: #1e272e;
+    border: 2px solid #3c40c6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-baixo-1:hover {
+    background-color: #3c40c6;
+    color: #fff;
+}
+
+.jogador-2 {
+    display: grid;
+    grid-template-areas: 
+        'avatar-2'
+        'controle-2'
+    ;
+    gap: 5px;
+    
+    grid-area: jogador-2;
+}
+
+.avatar-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: avatar-2;
+
+    height: 30px;
+    color: #fff;
+    background-color: #ff3f34;
+    border: 2px solid #ff3f34;
+    border-radius: 5px;
+}
+
+.controle-2 {
+    display: grid;
+    grid-template-areas: 
+        'botao-direita-2 botao-baixo-2'
+        'botao-cima-2    botao-esquerda-2'
+    ;
+    gap: 1px;
+    
+    grid-area: controle-2;
+}
+
+.botao-esquerda-2 {
+    grid-area: botao-esquerda-2;
+
+    height: 50px;
+    color: #fff;
+    background-color: #1e272e;
+    border: 2px solid #ff3f34;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-esquerda-2:hover {
+    background-color: #ff3f34;
+    color: #fff;
+}
+
+.botao-direita-2 {
+    grid-area: botao-direita-2;
+
+    height: 50px;
+    color: #fff;
+    background-color: #1e272e;
+    border: 2px solid #ff3f34;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-direita-2:hover {
+    background-color: #ff3f34;
+    color: #fff;
+}
+
+.botao-cima-2 {
+    grid-area: botao-cima-2;
+
+    height: 50px;
+    color: #fff;
+    background-color: #1e272e;
+    border: 2px solid #ff3f34;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-cima-2:hover {
+    background-color: #ff3f34;
+    color: #fff;
+}
+
+.botao-baixo-2 {
+    grid-area: botao-baixo-2;
+
+    height: 50px;
+    color: #fff;
+    background-color: #1e272e;
+    border: 2px solid #ff3f34;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-baixo-2:hover {
+    background-color: #ff3f34;
+    color: #fff;
+}
+/* ------------------------------------------------------ */
+
+/* ----------------------- Bloco C ---------------------- */
+.bloco-c {
+    display: grid;
+    grid-template-areas: 
+        'jogar-dado jogar-cartas sair'
+    ;
+    gap: 5px;
+    
+    grid-area: bloco-c;
+
+    background-color: #dfe6e9;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.jogar-dado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: jogar-dado;
+
+    background-color: #1e272e;
+    border: 2px solid #596275;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+}
+
+.jogar-dado:hover {
+    background-color: #74b9ff;
+}
+
+.dado {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.jogar-cartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: jogar-cartas;
+
+    background-color: #1e272e;
+    border: 2px solid #596275;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+}
+
+.jogar-cartas:hover {
+    background-color: #55efc4;
+}
+
+.cartas {
+    width: 50px;
+    height: 50px;
+}
+
+.sair-jogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: sair;
+
+    background-color: #1e272e;
+    border: 2px solid #596275;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+}
+
+.sair-jogo:hover {
+    background-color: #ff7675;
+}
+
+.sair {
+    width: 50px;
+    height: 50px;
+}
+/* ------------------------------------------------------ */
+
+/* ----------------------- Modal A ---------------------- */
+.modal-a {
+    position: absolute;
+    display: none;
+    
+    width: 300px;
+    background: #fff;
+    border-radius: 5px;
+    border: 4px solid #1e272e;
+}
+
+.conteudo-perguntas {
+    display: grid;
+    grid-template-areas: 
+        'imagem' 
+        'pergunta'
+        'botoes'
+        'feedback'
+        'fechar'
+    ;
+
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.perguntas-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: imagem;
+
+    background-color: #1e272e;
+    border-radius: 5px;
+}
+
+.perguntas-img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 5px;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: pergunta;
+
+    margin-top: 5px;
+    background-color: #1e272e;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.pergunta > label {
+    text-align: justify;
+    width: 100%;
+    color: #fff;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    grid-area: botoes;
+
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.button {
+    width: 140px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.verdadeiro {
+    background-color: #fff; 
+    color: #1e272e; 
+    border: 2px solid #3c40c6;
+}
+.verdadeiro:hover {
+    background-color: #3c40c6;
+    color: #fff;
+}
+
+.falso {
+    background-color: #fff; 
+    color: #1e272e; 
+    border: 2px solid #ff3f34;
+}
+.falso:hover {
+    background-color: #ff3f34;
+    color: #fff;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: feedback;
+
+    margin-top: 5px;
+    background-color: #1e272e;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.feedback > label {
+    text-align: justify;
+    width: 100%;
+    color: #fff;;
+}
+
+.buttons {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.fechar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: fechar;
+
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.fechar-1 {
+    background-color: #fff; 
+    color: #1e272e; 
+    border: 2px solid #ff3f34;
+}
+
+.fechar-1:hover {
+    background-color: #ff3f34;
+    color: #fff;
+}
+/* ------------------------------------------------------ */
+
+/* ----------------------- Modal B ---------------------- */
+.congrats {
+    position: absolute;
+    display: none;
+    width: 250px;
+
+    background: #fff;
+    border-radius: 5px;
+    border: 4px solid #1e272e;
+}
+
+.congrats-content{
+    display: grid;
+    grid-template-areas: 
+        'imagem' 
+        'pergunta'
+        'botoes'
+        'feedback'
+        'reiniciar'
+    ;
+
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.congrats-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: imagem;
+
+    background-color: #1e272e;
+    border-radius: 5px;
+}
+
+.congrats-img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 5px;
+}
+
+.reiniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: reiniciar;
+
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.reiniciar-1 {
+    background-color: #fff; 
+    color: #1e272e; 
+    border: 2px solid #05c46b;
+}
+
+.reiniciar-1:hover {
+    background-color: #05c46b;
+    color: #fff;
+}
+/* ------------------------------------------------------ */
+
+/* ------------ Adaptação para telas maiores ------------ */
+@media screen and (min-width: 568px) {   
+    .container-grid {
+        grid-template-areas: 
+            'bloco-a bloco-b bloco-b' 
+            'bloco-a bloco-c bloco-c'
+        ;
+    }
+
+    .casas {
+        width: 7em;
+        height: 7em;
+    }
+
+    .bloco-b {
+        grid-template-areas: 
+            'jogador-1' 
+            'jogador-2'
+        ;
+    }
+
+    .jogador-1 {
+        grid-template-areas: 
+            'avatar-1'
+            'controle-1'
+        ;
+    }
+
+    .avatar-1 {  
+        height: 5.5em;
+        width: 20em;
+    }
+
+    .controle-1 {
+        gap: 5px;
+    }
+
+    .botao-esquerda-1 {   
+        height: 5.5em;
+    }
+
+    .botao-direita-1 {
+        height: 5.5em;
+    }
+
+    .botao-cima-1 {
+        height: 5.5em;
+    }
+
+    .botao-baixo-1 {  
+        height: 5.5em;
+    }
+   
+    .avatar-2 {
+        height: 5.5em;
+        width: 20em;
+    }
+        
+    .botao-esquerda-2 {    
+        height: 5.5em;
+    }
+
+    .botao-direita-2 {    
+        height: 5.5em;
+    }
+
+    .botao-cima-2 { 
+        height: 5.5em;
+    }
+
+    .botao-baixo-2 {
+        height: 5.5em;
+    }
+}
+/* ------------------------------------------------------ */
